@@ -34,20 +34,26 @@
 	    line-height: 1.4;
 	  }
 
+	  /* Quitamos el flex de main para no afectar slider */
 	  main {
-	    display: flex;
-	    justify-content: center;
-	    gap: 10px;
 	    margin: 20px 0;
 	  }
 
-	  main article {
+	  /* Contenedor solo para las 3 imágenes debajo del slider */
+	  #imagenes-articulos {
+	    display: flex;
+	    justify-content: center;
+	    gap: 10px;
+	    margin-top: 20px;
+	  }
+
+	  #imagenes-articulos article {
 	    flex: 1 1 0;
 	    max-width: 33%;
 	    box-sizing: border-box;
 	  }
 
-	  main article img {
+	  #imagenes-articulos article img {
 	    width: 100%;
 	    height: 200px;
 	    object-fit: cover;
@@ -72,24 +78,29 @@
 		</ul>
 	</nav>
 	<main>
-	<div id="wrapper">
-		<div class="rslides_container">
-			<ul class="rslides" id="slider1">
-			  <li><img src="img/1.png" alt=""></li>
-			  <li><img src="img/2.jpg" alt=""></li>
-			  <li><img src="img/3.jpg" alt=""></li>
-			</ul>
+		<div id="wrapper">
+			<div class="rslides_container">
+				<ul class="rslides" id="slider1">
+				  <li><img src="img/1.png" alt=""></li>
+				  <li><img src="img/2.jpg" alt=""></li>
+				  <li><img src="img/3.jpg" alt=""></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<article>
-		<img src="img/1e.jpg" alt="">
-	</article>
-	<article>
-		<img src="img/2e.jpg" alt="">
-	</article>
-	<article>
-		<img src="img/3e.jpg" alt="">
-	</article>
+
+		<!-- Contenedor nuevo para las imágenes en fila debajo del slider -->
+		<section id="imagenes-articulos">
+			<article>
+				<img src="img/1e.jpg" alt="">
+			</article>
+			<article>
+				<img src="img/2e.jpg" alt="">
+			</article>
+			<article>
+				<img src="img/3e.jpg" alt="">
+			</article>
+		</section>
+
 	</main>
 	<footer>
 	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/U.S._Department_of_State_official_seal.svg/640px-U.S._Department_of_State_official_seal.svg.png" alt="Logo Departamento de Estado">
