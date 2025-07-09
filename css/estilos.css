@@ -1,5 +1,4 @@
-/* Elimina este bloque para main o coméntalo */
-/*
+
 main {
   display: flex;
   justify-content: center;
@@ -23,7 +22,6 @@ main article img {
 }
 */
 
-/* Añade este bloque para el nuevo contenedor */
 #imagenes-articulos {
   display: flex;
   justify-content: center;
