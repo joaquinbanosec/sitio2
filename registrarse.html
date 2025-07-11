@@ -3,15 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Registrarse</title>
+	<title>USO DE SLLIDES Y ETIQUETAS SEMANTICAS</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
 	<link rel="stylesheet" type="text/css" href="css/themes.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+
 </head>
 <body>
-<header>
+	<header>
 		<img src="img/logo.png">
-		<h1>PORTAL NACIONAL</h1>
+		<h1>DEPARTAMENTO DE ESTADO DE LOS ESTADOS UNIDOS DE AMERICA</h1>
 	</header>
 	<nav>
 		<ul>
@@ -21,5 +24,53 @@
 			<li><a href="registrarse.html">REGISTRARSE</a></li>
 		</ul>
 	</nav>
-</body>
-</html>
+	<form id="Formulario" action= "" method="POST">
+		<fieldset>
+			<legend>DATOS DEL USUARIO</legend>
+			<p>
+			<span class="etiquetas"> CEDULA</span>
+			<input type="text" name="textcedula" class="text">
+			</p>
+			<p>
+			<span class="etiquetas"> NOMBRES</span>
+			<input type="text" name="textnombres" class="text">
+			</p>
+				<p>
+			<span class="etiquetas"> APELLIDO</span>
+			<input type="text" name="textapellidos" class="text">
+			</p>
+				<p>
+			<span class="etiquetas"> USUARIO</span>
+			<input type="text" name="textusuario" class="text">
+			</p>
+	    <p>
+			<span class="etiquetas"> PASSWORD</span>
+			<input type="text" name="textpassword" class="text">
+			</p>
+			<input type="submit" name="btnpassword" value="GUARDAR USUARIO" >
+
+		</fieldset>
+	</form>
+	<footer style="background-color: #1a1a1a; color: #ffffff; padding: 40px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-top: 4px solid #004080; box-shadow: 0 -2px 10px rgba(0,0,0,0.6); text-align: center;">
+
+  <h2 style="margin-bottom: 12px; color: #ffffff; font-weight: bold; font-size: 20px; letter-spacing: 1px;">
+    UNITED STATES DEPARTMENT OF STATE
+  </h2>
+
+  <p style="margin: 8px 0; font-size: 15px;">Phone: +593 0986341238</p>
+  <p style="margin: 4px 0 20px 0; font-size: 15px;">Email: DEPARTMENTOFSTATE@GOV.com</p>
+
+  <div style="margin-top: 10px;">
+    <a href="https://www.facebook.com/USDEPARTMENTOFSTATE/?locale=es_LA" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" alt="Facebook" width="32" style="filter: grayscale(100%) brightness(1.5);">
+    </a>
+    <a href="https://www.instagram.com/agripacsa/?hl=es" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/32/733/733558.png" alt="Instagram" width="32" style="filter: grayscale(100%) brightness(1.5);">
+    </a>
+    <a href="https://www.instagram.com/agripacsa/?hl=es" target="_blank" style="margin: 0 10px;">
+      <img src="img/tikitiki.png" alt="TikTok" width="32" style="filter: grayscale(100%) brightness(1.5);">
+    </a>
+  </div>
+
+  <p style="margin-top: 30px; font-size: 12px; color: #cccccc;">&copy; 2025 UNITED STATES GOVERNMENT | All rights reserved</p>
+</footer>
