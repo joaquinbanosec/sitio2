@@ -36,18 +36,28 @@
 
 	  main {
 	    margin: 20px 0;
+	    max-width: 900px; /* Limitar ancho máximo */
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding: 0 15px;
+	  }
+
+	  #wrapper {
+	    max-width: 800px; /* Limita ancho del slider */
+	    margin: 0 auto; /* Centra el slider */
 	  }
 
 	  #imagenes-articulos {
 	    display: flex;
 	    justify-content: center;
-	    gap: 10px;
-	    margin-top: 20px;
+	    gap: 15px;
+	    margin-top: 30px;
+	    flex-wrap: wrap;
 	  }
 
 	  #imagenes-articulos article {
-	    flex: 1 1 0;
-	    max-width: 33%;
+	    flex: 1 1 30%;
+	    max-width: 30%;
 	    box-sizing: border-box;
 	  }
 
@@ -58,6 +68,18 @@
 	    display: block;
 	    border-radius: 6px;
 	    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	  }
+
+	  /* Opcional: Responsividad para pantallas pequeñas */
+	  @media (max-width: 600px) {
+	    #imagenes-articulos {
+	      flex-direction: column;
+	      gap: 20px;
+	    }
+	    #imagenes-articulos article {
+	      max-width: 100%;
+	      flex: 1 1 100%;
+	    }
 	  }
 	</style>
 
@@ -85,7 +107,6 @@
 				</ul>
 			</div>
 		</div>
-
 
 		<section id="imagenes-articulos">
 			<article>
